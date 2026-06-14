@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 104" role="img" aria-label="Powers of Mind">
+  <!-- lotus base -->
+  <path d="M20,76 C33,89 63,89 76,76 C63,84 33,84 20,76 Z" fill="#F2C94C"/>
+  <!-- outer gold petals -->
+  <g fill="#F2C94C">
+    <path d="M48,40 C58,52 60,66 48,78 C36,66 38,52 48,40 Z" transform="rotate(-62 48 78)"/>
+    <path d="M48,40 C58,52 60,66 48,78 C36,66 38,52 48,40 Z" transform="rotate(62 48 78)"/>
+  </g>
+  <!-- inner sage petals -->
+  <g fill="#7FC9B8">
+    <path d="M48,28 C56,45 56,63 48,78 C40,63 40,45 48,28 Z" transform="rotate(-32 48 78)"/>
+    <path d="M48,28 C56,45 56,63 48,78 C40,63 40,45 48,28 Z" transform="rotate(32 48 78)"/>
+  </g>
+  <!-- center teal petal -->
+  <path d="M48,24 C57,44 57,62 48,78 C39,62 39,44 48,24 Z" fill="#16A89B"/>
+  <!-- head profile -->
+  <path d="M78,30 C94,23 107,38 103,55 C101,65 95,65 96,71 C97,75 92,75 91,79 C90,83 93,85 90,88 C87,91 82,91 79,90"
+        fill="none" stroke="#0E8C82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
