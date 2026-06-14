@@ -6,6 +6,22 @@
   var BOOK = "https://powersofmind.clientsecure.me/";
   var SMS  = "sms:8508079801";
 
+  /* Brand mark — lotus + head profile in the Powers of Mind colors. */
+  var MARK =
+    '<svg viewBox="0 0 120 104" aria-hidden="true">'+
+      '<path d="M20,76 C33,89 63,89 76,76 C63,84 33,84 20,76 Z" fill="#F2C94C"/>'+
+      '<g fill="#F2C94C">'+
+        '<path d="M48,40 C58,52 60,66 48,78 C36,66 38,52 48,40 Z" transform="rotate(-62 48 78)"/>'+
+        '<path d="M48,40 C58,52 60,66 48,78 C36,66 38,52 48,40 Z" transform="rotate(62 48 78)"/>'+
+      '</g>'+
+      '<g fill="#7FC9B8">'+
+        '<path d="M48,28 C56,45 56,63 48,78 C40,63 40,45 48,28 Z" transform="rotate(-32 48 78)"/>'+
+        '<path d="M48,28 C56,45 56,63 48,78 C40,63 40,45 48,28 Z" transform="rotate(32 48 78)"/>'+
+      '</g>'+
+      '<path d="M48,24 C57,44 57,62 48,78 C39,62 39,44 48,24 Z" fill="#16A89B"/>'+
+      '<path d="M78,30 C94,23 107,38 103,55 C101,65 95,65 96,71 C97,75 92,75 91,79 C90,83 93,85 90,88 C87,91 82,91 79,90" fill="none" stroke="#0E8C82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>'+
+    '</svg>';
+
   /* The Services dropdown + footer Services column come from this list.
      To add a service page later, add one line here. */
   var serviceLinks = [
@@ -28,7 +44,7 @@
 
   var header =
   '<header id="top"><div class="container nav">'+
-    '<a href="index.html" class="brand"><span class="mark">&#10022;</span><span>Powers of Mind<small>Therapy &middot; Tallahassee</small></span></a>'+
+    '<a href="index.html" class="brand"><span class="mark">'+MARK+'</span><span>Powers of Mind<small>Therapy &middot; Tallahassee</small></span></a>'+
     '<nav class="nav-links" id="navLinks">'+
       '<a href="index.html"'+ac("index.html")+'>Home</a>'+
       '<div class="has-drop">'+
@@ -50,7 +66,7 @@
   var footer =
   '<footer><div class="container">'+
     '<div class="foot-grid">'+
-      '<div class="foot-col foot-brand"><a href="index.html" class="brand" style="color:#F6F1E8"><span class="mark">&#10022;</span><span style="color:#F6F1E8">Powers of Mind<small>Therapy &middot; Tallahassee</small></span></a><p>Compassionate, expert therapy in Midtown Tallahassee.</p></div>'+
+      '<div class="foot-col foot-brand"><a href="index.html" class="brand" style="color:#F6F1E8"><span class="mark">'+MARK+'</span><span style="color:#F6F1E8">Powers of Mind<small>Therapy &middot; Tallahassee</small></span></a><p>Compassionate, expert therapy in Midtown Tallahassee.</p></div>'+
       '<div class="foot-col"><h4>Visit</h4><p>901 N. Gadsden Street<br>Tallahassee, FL</p><p>Mon&ndash;Fri &middot; 9:00 AM&ndash;6:00 PM</p><p><a href="'+SMS+'">Text 850-807-9801</a></p></div>'+
       '<div class="foot-col"><h4>Services</h4>'+svcFootLinks+'</div>'+
       '<div class="foot-col"><h4>Practice</h4><a href="dr-powers.html">Dr. Powers</a><a href="ashlyn.html">Ashlyn</a><a href="jake.html">Jake</a><a href="contact.html">Contact</a><a href="'+BOOK+'" target="_blank" rel="noopener">Book a Session</a></div>'+
