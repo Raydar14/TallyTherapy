@@ -2,13 +2,13 @@
    POWERS OF MIND — shared stylesheet (edit colors/fonts here once)
    ============================================================ */
 :root{
-  --bg:#F6F1E8;--bg-2:#EFE6D6;--card:#FCFAF4;
-  --ink:#26261F;--ink-soft:#5A574C;
-  --green:#33503F;--green-deep:#21362A;--sage:#8FA98A;
-  --clay:#C2683F;--clay-deep:#A9542F;
-  --line:rgba(38,38,31,.14);
-  --shadow-sm:0 2px 10px rgba(33,54,42,.06);
-  --shadow:0 18px 50px -20px rgba(33,54,42,.35);
+  --bg:#F2FAF8;--bg-2:#E2F2EE;--card:#FFFFFF;
+  --ink:#1E2A27;--ink-soft:#52635F;
+  --green:#0E8C82;--green-deep:#0A655E;--sage:#7FC9B8;
+  --clay:#F2C94C;--clay-deep:#A9791B;
+  --line:rgba(14,140,130,.16);
+  --shadow-sm:0 2px 10px rgba(10,101,94,.07);
+  --shadow:0 18px 50px -20px rgba(10,101,94,.34);
   --r:18px;--maxw:1160px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -27,16 +27,17 @@ h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.0
 .btn-primary:hover{background:var(--green-deep);transform:translateY(-2px);box-shadow:var(--shadow)}
 .btn-ghost{background:transparent;border-color:var(--green);color:var(--green)}
 .btn-ghost:hover{background:var(--green);color:#F6F1E8;transform:translateY(-2px)}
-.btn-clay{background:var(--clay);color:#fff}
+.btn-clay{background:var(--clay);color:var(--green-deep)}
 .btn-clay:hover{background:var(--clay-deep);transform:translateY(-2px);box-shadow:var(--shadow)}
 .btn .arr{transition:transform .25s}.btn:hover .arr{transform:translateX(4px)}
 
 /* header */
-header{position:sticky;top:0;z-index:100;background:rgba(246,241,232,.82);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+header{position:sticky;top:0;z-index:100;background:rgba(242,250,248,.85);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
 header.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(33,54,42,.5)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:78px}
 .brand{display:flex;align-items:center;gap:12px;font-family:"Fraunces";font-weight:500;font-size:1.35rem;color:var(--green-deep)}
-.brand .mark{width:38px;height:38px;border-radius:50%;flex:none;background:radial-gradient(circle at 32% 30%,var(--sage),var(--green) 75%);display:grid;place-items:center;color:#F6F1E8;font-size:1.1rem;box-shadow:inset 0 0 0 3px rgba(246,241,232,.35)}
+.brand .mark{width:46px;height:42px;flex:none;display:grid;place-items:center}
+.brand .mark svg{width:100%;height:100%;display:block}
 .brand small{display:block;font-family:"Hanken Grotesk";font-weight:500;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay-deep);line-height:1}
 .nav-links{display:flex;align-items:center;gap:28px}
 .nav-links a{font-weight:500;font-size:.96rem;color:var(--ink-soft);position:relative;padding:4px 0}
@@ -52,7 +53,7 @@ header.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(33,54,
 .hero{position:relative;padding:72px 0 90px;overflow:hidden}
 .blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;z-index:0}
 .blob.b1{width:520px;height:520px;background:var(--sage);top:-160px;right:-120px;animation:float1 18s ease-in-out infinite}
-.blob.b2{width:380px;height:380px;background:#E8C7A8;bottom:-140px;left:-100px;opacity:.45;animation:float2 22s ease-in-out infinite}
+.blob.b2{width:380px;height:380px;background:#F7DD8B;bottom:-140px;left:-100px;opacity:.5;animation:float2 22s ease-in-out infinite}
 @keyframes float1{50%{transform:translate(-30px,40px) scale(1.06)}}
 @keyframes float2{50%{transform:translate(40px,-30px) scale(1.08)}}
 .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center}
@@ -106,12 +107,12 @@ section{padding:84px 0;position:relative}
 /* team grid */
 .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .member{background:var(--green-deep);color:#EDE6D8;border:1px solid rgba(246,241,232,.16);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
-.member .photo{aspect-ratio:1/1;background:linear-gradient(150deg,#3c5a47,#2a4334);overflow:hidden;position:relative}
+.member .photo{aspect-ratio:1/1;background:linear-gradient(150deg,#0E8C82,#0A655E);overflow:hidden;position:relative}
 .member .photo img{width:100%;height:100%;object-fit:cover;object-position:top center}
 .member .mono{position:absolute;inset:0;display:grid;place-items:center;font-family:"Fraunces";font-size:3.4rem;color:rgba(246,241,232,.55)}
 .member .body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
 .member h3{font-size:1.45rem;line-height:1.05;color:#F6F1E8}
-.member .cred{font-weight:600;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:#E8C7A8;margin:6px 0 14px}
+.member .cred{font-weight:600;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:#F2C94C;margin:6px 0 14px}
 .member p{font-size:.95rem;color:rgba(237,230,216,.85);margin-bottom:16px}
 .member .btn{margin-top:auto;justify-content:center}
 
@@ -219,7 +220,7 @@ footer{background:var(--green-deep);color:rgba(237,230,216,.75);padding:54px 0 3
 .price-line b{color:var(--clay-deep)}
 .more{display:inline-block;margin-top:14px;color:var(--clay-deep);font-weight:700;font-size:.95rem}
 .more:hover{text-decoration:underline}
-.note-box{background:rgba(194,104,63,.08);border:1px solid rgba(194,104,63,.3);border-radius:14px;padding:20px 22px;font-size:.95rem;color:var(--ink-soft);margin-top:8px}
+.note-box{background:rgba(242,201,76,.14);border:1px solid rgba(242,201,76,.45);border-radius:14px;padding:20px 22px;font-size:.95rem;color:var(--ink-soft);margin-top:8px}
 .note-box b{color:var(--clay-deep)}
 .provider-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 24px;box-shadow:var(--shadow-sm)}
 .provider-row .who{font-weight:700;color:var(--green-deep)}
