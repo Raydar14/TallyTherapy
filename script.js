@@ -61,7 +61,8 @@
       '<a href="ashlyn.html"'+ac("ashlyn.html")+'>Dr. Hulsey</a>'+
       '<a href="jake.html"'+ac("jake.html")+'>Jake</a>'+
       '<a href="contact.html"'+ac("contact.html")+'>Contact</a>'+
-      '<a class="btn btn-primary" href="'+BOOK+'" target="_blank" rel="noopener">Book a Session</a>'+
+      '<a class="btn btn-ghost" href="'+SMS+'">Ask a Question</a>'+
+      '<a class="btn btn-primary nav-book-m" href="'+BOOK+'" target="_blank" rel="noopener">Book a Session</a>'+
     '</nav>'+
     '<div class="nav-cta">'+
       '<a class="btn btn-primary" href="'+BOOK+'" target="_blank" rel="noopener">Book a Session</a>'+
