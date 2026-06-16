@@ -100,5 +100,18 @@
   }, {threshold:.14});
   document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
 
+  /* hero office slideshow — auto-crossfade through any office#.jpg that exist */
+  var slidesWrap = document.querySelector(".hero-slides");
+  if(slidesWrap){
+    setInterval(function(){
+      var slides = slidesWrap.querySelectorAll(".slide");
+      if(slides.length < 2){ return; }
+      var cur = slidesWrap.querySelector(".slide.is-active") || slides[0];
+      var i = Array.prototype.indexOf.call(slides, cur);
+      cur.classList.remove("is-active");
+      slides[(i+1) % slides.length].classList.add("is-active");
+    }, 4500);
+  }
+
   var y = document.getElementById("year"); if(y){ y.textContent = new Date().getFullYear(); }
 })();
