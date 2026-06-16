@@ -69,6 +69,10 @@ header.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(33,54,
 .portrait-wrap{position:relative}
 .portrait{border-radius:140px 140px 24px 24px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);aspect-ratio:3/4;background:var(--bg-2)}
 .portrait img{width:100%;height:100%;object-fit:cover}
+/* hero office slideshow */
+.hero-slides{position:relative}
+.hero-slides .slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.1s ease}
+.hero-slides .slide.is-active{opacity:1}
 .portrait-tag{position:absolute;bottom:22px;left:-22px;background:var(--card);padding:14px 20px;border-radius:14px;box-shadow:var(--shadow);border:1px solid var(--line)}
 .portrait-tag strong{font-family:"Fraunces";font-weight:600;font-size:1.05rem;color:var(--green-deep);display:block}
 .portrait-tag span{font-size:.82rem;color:var(--clay-deep);font-weight:600;letter-spacing:.04em}
