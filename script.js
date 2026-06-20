@@ -59,7 +59,6 @@
       '</div>'+
       '<a href="dr-powers.html"'+ac("dr-powers.html")+'>Dr. Powers</a>'+
       '<a href="ashlyn.html"'+ac("ashlyn.html")+'>Dr. Hulsey</a>'+
-      '<a href="jake.html"'+ac("jake.html")+'>Jake</a>'+
       '<a href="contact.html"'+ac("contact.html")+'>Contact</a>'+
       '<a class="btn btn-ghost" href="'+SMS+'">Text Us Questions</a>'+
       '<a class="btn btn-primary nav-book-m" href="'+BOOK+'" target="_blank" rel="noopener">Book a Session</a>'+
@@ -76,7 +75,7 @@
       '<div class="foot-col foot-brand"><a href="index.html" class="brand" style="color:#F6F1E8"><span class="mark">'+MARK+'</span><span style="color:#F6F1E8">Powers of Mind<small>Therapy &middot; Tallahassee</small></span></a><p>Compassionate, expert therapy in Midtown Tallahassee.</p></div>'+
       '<div class="foot-col"><h4>Visit</h4><p>901 N. Gadsden Street<br>Tallahassee, FL</p><p>Mon&ndash;Fri &middot; 9:00 AM&ndash;6:00 PM</p><p><a href="'+SMS+'">Text 850-807-9801</a></p></div>'+
       '<div class="foot-col"><h4>Services</h4>'+svcFootLinks+'</div>'+
-      '<div class="foot-col"><h4>Practice</h4><a href="dr-powers.html">Dr. Powers</a><a href="ashlyn.html">Dr. Hulsey</a><a href="jake.html">Jake</a><a href="contact.html">Contact</a><a href="'+BOOK+'" target="_blank" rel="noopener">Book a Session</a></div>'+
+      '<div class="foot-col"><h4>Practice</h4><a href="dr-powers.html">Dr. Powers</a><a href="ashlyn.html">Dr. Hulsey</a><a href="contact.html">Contact</a><a href="'+BOOK+'" target="_blank" rel="noopener">Book a Session</a></div>'+
     '</div>'+
     '<div class="foot-bottom"><span>&copy; <span id="year"></span> Powers of Mind &middot; Dr. Raychel Powers, Psy.D. &middot; Tallahassee, FL</span><span>Licensed Psychologist &middot; Florida</span></div>'+
   '</div></footer>';
