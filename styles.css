@@ -69,6 +69,16 @@ header.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(33,54,
 .portrait-wrap{position:relative}
 .portrait{border-radius:140px 140px 24px 24px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);aspect-ratio:3/4;background:var(--bg-2)}
 .portrait img{width:100%;height:100%;object-fit:cover}
+/* application form */
+.apply-form .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.apply-form label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:.9rem;color:var(--green-deep)}
+.apply-form label.full{grid-column:1/-1}
+.apply-form input,.apply-form select,.apply-form textarea{font-family:"Hanken Grotesk",sans-serif;font-size:1rem;font-weight:400;color:var(--ink);padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);width:100%}
+.apply-form input:focus,.apply-form select:focus,.apply-form textarea:focus{outline:2px solid var(--green);outline-offset:1px;border-color:var(--green)}
+.apply-form input[type=file]{padding:10px 12px;background:var(--bg-2);cursor:pointer}
+.apply-form textarea{resize:vertical}
+@media(max-width:600px){.apply-form .form-grid{grid-template-columns:1fr}}
+
 /* hero office slideshow */
 .hero-slides{position:relative;aspect-ratio:4/3;border-radius:20px}
 .hero-slides .slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.1s ease}
