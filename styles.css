@@ -39,7 +39,7 @@ header.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(33,54,
 .brand .mark{width:46px;height:42px;flex:none;display:grid;place-items:center}
 .brand .mark svg{width:100%;height:100%;display:block}
 .brand small{display:block;font-family:"Hanken Grotesk";font-weight:500;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay-deep);line-height:1}
-.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links{display:flex;align-items:center;gap:22px}
 .nav-links a{font-weight:500;font-size:.96rem;color:var(--ink-soft);position:relative;padding:4px 0}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--clay);transition:width .3s}
 .nav-links a:hover{color:var(--ink)}
@@ -50,6 +50,14 @@ header.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(33,54,
 .nav-book-m{display:none}
 .hamburger{display:none;background:none;border:none;cursor:pointer;width:42px;height:42px}
 .hamburger span{display:block;width:24px;height:2px;background:var(--green-deep);margin:5px auto;transition:.3s}
+/* collapse the (now longer) menu to the hamburger earlier so it never crowds */
+@media(max-width:1000px){
+  .nav-links,.nav-cta .btn{display:none}
+  .hamburger{display:block}
+  .nav-links.open{display:flex;position:absolute;top:78px;left:0;right:0;flex-direction:column;background:var(--bg);padding:20px 28px 28px;gap:18px;border-bottom:1px solid var(--line);box-shadow:var(--shadow);z-index:200}
+  .nav-links.open a{font-size:1.05rem}
+  .nav-links.open .btn{display:inline-flex;width:100%;justify-content:center}
+}
 
 /* home hero */
 .hero{position:relative;padding:72px 0 90px;overflow:hidden}
@@ -69,6 +77,30 @@ header.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(33,54,
 .portrait-wrap{position:relative}
 .portrait{border-radius:140px 140px 24px 24px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);aspect-ratio:3/4;background:var(--bg-2)}
 .portrait img{width:100%;height:100%;object-fit:cover}
+/* blog */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.post-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s;color:inherit}
+.post-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.post-card .pc-body{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1}
+.post-card .pc-cat{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--clay-deep)}
+.post-card h3{font-size:1.35rem;margin:8px 0 6px;line-height:1.15}
+.post-card .pc-date{font-size:.82rem;color:var(--ink-soft);margin-bottom:12px}
+.post-card p{font-size:.96rem;color:var(--ink-soft);margin-bottom:16px}
+.post-card .more{margin-top:auto}
+
+/* article */
+.article{max-width:720px;margin:0 auto}
+.article>p{color:var(--ink-soft);margin-bottom:18px;font-size:1.06rem}
+.article h2{font-size:1.6rem;margin:34px 0 12px}
+.article h3{font-size:1.28rem;margin:26px 0 8px;color:var(--green-deep)}
+.article ul,.article ol{margin:0 0 20px 22px;color:var(--ink-soft)}
+.article li{margin-bottom:9px;font-size:1.04rem}
+.article .lead{font-size:1.22rem;color:var(--ink);margin-bottom:22px}
+.article blockquote{font-family:"Fraunces";font-style:italic;font-size:1.3rem;color:var(--green-deep);border-left:3px solid var(--sage);padding:6px 0 6px 20px;margin:24px 0}
+.article .refs{font-size:.86rem;color:var(--ink-soft)}
+.article .refs li{font-size:.86rem}
+.post-back{display:inline-block;margin-top:34px;color:var(--clay-deep);font-weight:700}
+
 /* application form */
 .apply-form .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .apply-form label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:.9rem;color:var(--green-deep)}
