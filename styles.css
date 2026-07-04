@@ -77,6 +77,12 @@ header.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(33,54,
 .portrait-wrap{position:relative}
 .portrait{border-radius:140px 140px 24px 24px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);aspect-ratio:3/4;background:var(--bg-2)}
 .portrait img{width:100%;height:100%;object-fit:cover}
+/* region soft-block overlay */
+#geo-block{position:fixed;inset:0;z-index:99999;background:var(--bg);display:grid;place-items:center;padding:28px;text-align:center}
+#geo-block .gb-card{max-width:520px}
+#geo-block h1{font-family:"Fraunces",Georgia,serif;color:var(--green-deep);font-size:clamp(1.8rem,5vw,2.4rem);margin-bottom:16px}
+#geo-block p{color:var(--ink-soft);font-size:1.12rem;line-height:1.6}
+
 /* blog */
 .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
 .post-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s;color:inherit}
