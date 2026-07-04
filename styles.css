@@ -100,6 +100,7 @@ header.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(33,54,
 .article .refs{font-size:.86rem;color:var(--ink-soft)}
 .article .refs li{font-size:.86rem}
 .post-back{display:inline-block;margin-top:34px;color:var(--clay-deep);font-weight:700}
+.post-byline{font-size:.95rem;color:var(--ink-soft);font-weight:600;margin-top:8px}
 
 /* application form */
 .apply-form .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
