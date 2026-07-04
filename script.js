@@ -12,6 +12,19 @@
   var BOOK = "https://powersofmind.clientsecure.me/";
   var SMS  = "sms:8508079801";
 
+  /* conversion signals -> dataLayer (for GTM, Google Ads & GA4 triggers) */
+  window.dataLayer = window.dataLayer || [];
+  document.addEventListener("click", function(e){
+    var a = e.target.closest ? e.target.closest("a") : null; if(!a){ return; }
+    var href = a.getAttribute("href") || "";
+    if(href.indexOf("clientsecure.me") > -1){ window.dataLayer.push({event:"book_click"}); }
+    else if(href.indexOf("sms:") === 0){ window.dataLayer.push({event:"text_click"}); }
+    else if(href.indexOf("tel:") === 0){ window.dataLayer.push({event:"call_click"}); }
+  });
+  document.addEventListener("submit", function(e){
+    if(e.target && e.target.classList && e.target.classList.contains("apply-form")){ window.dataLayer.push({event:"application_submit"}); }
+  });
+
   /* Brand mark — lotus + head profile in the Powers of Mind colors. */
   var MARK =
     '<svg viewBox="0 0 120 104" aria-hidden="true">'+
