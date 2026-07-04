@@ -92,7 +92,8 @@
       '<div class="foot-col"><h4>Services</h4>'+svcFootLinks+'</div>'+
       '<div class="foot-col"><h4>Practice</h4><a href="dr-powers.html">Dr. Powers</a><a href="ashlyn.html">Dr. Hulsey</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="careers.html">Join Our Team</a><a href="'+BOOK+'" target="_blank" rel="noopener">Book a Session</a></div>'+
     '</div>'+
-    '<div class="foot-bottom"><span>&copy; <span id="year"></span> Powers of Mind &middot; Dr. Raychel Powers, Psy.D. &middot; Tallahassee, FL</span><span><a href="privacy.html">Privacy Policy</a> &middot; Licensed Psychologist &middot; Florida</span></div>'+
+    '<p class="foot-crisis">In crisis? Call or text <strong>988</strong> (Suicide &amp; Crisis Lifeline), or call 911.</p>'+
+    '<div class="foot-bottom"><span>&copy; <span id="year"></span> Powers of Mind &middot; Dr. Raychel Powers, Psy.D. &middot; Tallahassee, FL</span><span><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Use</a> &middot; <a href="notices.html">Your Rights &amp; Notices</a></span></div>'+
   '</div></footer>';
 
   var hm = document.getElementById("site-header"); if(hm){ hm.outerHTML = header; }
