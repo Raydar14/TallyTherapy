@@ -9,6 +9,31 @@
     j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
     f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WPMBCLT8');
 
+  /* region soft-block: show a notice to visitors outside the US & Costa Rica.
+     Fails OPEN (allows access) if the country lookup errors, so real visitors are never blocked by a glitch. */
+  (function(){
+    var ALLOWED = { US:1, CR:1 };
+    function block(country){
+      var o = document.createElement("div");
+      o.id = "geo-block";
+      o.innerHTML = '<div class="gb-card">'+
+        '<h1>Not available in your region</h1>'+
+        '<p>We’re sorry, but Powers of Mind Psychological Services is only available in the United States and Costa Rica.</p>'+
+        '</div>';
+      (document.body || document.documentElement).appendChild(o);
+      if(document.body){ document.body.style.overflow = "hidden"; }
+    }
+    try{
+      fetch("https://get.geojs.io/v1/ip/country.json")
+        .then(function(r){ return r.json(); })
+        .then(function(d){
+          var c = ((d && (d.country || d.country_code)) || "").toUpperCase();
+          if(c && !ALLOWED[c]){ block(c); }
+        })
+        .catch(function(){ /* fail open */ });
+    }catch(e){ /* fail open */ }
+  })();
+
   var BOOK = "https://powersofmind.clientsecure.me/";
   var SMS  = "sms:8508079801";
 
