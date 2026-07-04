@@ -219,6 +219,8 @@ footer{background:var(--green-deep);color:rgba(237,230,216,.75);padding:54px 0 3
 .foot-links{display:flex;gap:24px;flex-wrap:wrap}
 .foot-links a{font-size:.95rem;color:rgba(237,230,216,.8)}.foot-links a:hover{color:#F6F1E8}
 .foot-bottom{padding-top:24px;font-size:.82rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.foot-bottom a{color:rgba(237,230,216,.85)}.foot-bottom a:hover{color:#F6F1E8}
+.foot-crisis{padding-top:22px;font-size:.86rem;color:rgba(237,230,216,.8)}.foot-crisis strong{color:#F6F1E8}
 
 /* responsive */
 @media(max-width:980px){
