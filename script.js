@@ -16,6 +16,17 @@
     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
   })(window, document, "clarity", "script", "xhh3akq8gm");
 
+  /* Google Analytics 4 (gtag) — direct install so GA4 collects reliably */
+  (function(){
+    var g=document.createElement("script"); g.async=1;
+    g.src="https://www.googletagmanager.com/gtag/js?id=G-MYSWPPB8FZ";
+    document.head.appendChild(g);
+  })();
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ window.dataLayer.push(arguments); }
+  gtag("js", new Date());
+  gtag("config", "G-MYSWPPB8FZ");
+
   /* region soft-block: show a notice to visitors outside the US & Costa Rica.
      Fails OPEN (allows access) if the country lookup errors, so real visitors are never blocked by a glitch. */
   (function(){
