@@ -55,17 +55,21 @@
   var BOOK = "https://powersofmind.clientsecure.me/";
   var SMS  = "sms:8508079801";
 
-  /* conversion signals -> dataLayer (for GTM, Google Ads & GA4 triggers) */
+  /* conversion signals -> GA4 (as events) + dataLayer (for GTM / Google Ads) */
   window.dataLayer = window.dataLayer || [];
+  function track(name){
+    window.dataLayer.push({event:name});
+    if(typeof gtag === "function"){ gtag("event", name); }
+  }
   document.addEventListener("click", function(e){
     var a = e.target.closest ? e.target.closest("a") : null; if(!a){ return; }
     var href = a.getAttribute("href") || "";
-    if(href.indexOf("clientsecure.me") > -1){ window.dataLayer.push({event:"book_click"}); }
-    else if(href.indexOf("sms:") === 0){ window.dataLayer.push({event:"text_click"}); }
-    else if(href.indexOf("tel:") === 0){ window.dataLayer.push({event:"call_click"}); }
+    if(href.indexOf("clientsecure.me") > -1){ track("book_click"); }
+    else if(href.indexOf("sms:") === 0){ track("text_click"); }
+    else if(href.indexOf("tel:") === 0){ track("call_click"); }
   });
   document.addEventListener("submit", function(e){
-    if(e.target && e.target.classList && e.target.classList.contains("apply-form")){ window.dataLayer.push({event:"application_submit"}); }
+    if(e.target && e.target.classList && e.target.classList.contains("apply-form")){ track("application_submit"); }
   });
 
   /* Brand mark — lotus + head profile in the Powers of Mind colors. */
