@@ -69,7 +69,7 @@
       '<circle cx="60" cy="60" r="52" fill="none" stroke="#F5B72C" stroke-width="4"/>'+
       '<circle cx="60" cy="60" r="34" fill="none" stroke="#F5B72C" stroke-width="2.5" opacity=".55"/>'+
       '<circle cx="60" cy="60" r="8" fill="#F5B72C"/>'+
-      '<path d="M32,80 L60,44 L88,80" fill="none" stroke="#0B1B2C" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>'+
+      '<path d="M32,80 L60,44 L88,80" fill="none" stroke="#8C1D2F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>'+
       '<path d="M32,80 L60,44 L88,80" fill="none" stroke="#F5B72C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>'+
     '</svg>';
 
