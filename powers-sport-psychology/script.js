@@ -67,7 +67,7 @@
   var MARK =
     '<svg viewBox="0 0 120 120" aria-hidden="true">'+
       '<circle cx="60" cy="60" r="52" fill="none" stroke="#B7FF3E" stroke-width="3"/>'+
-      '<circle cx="60" cy="60" r="34" fill="none" stroke="#B7FF3E" stroke-width="1.5" opacity=".45"/>'+
+      '<circle cx="60" cy="60" r="34" fill="none" stroke="#3AE0FF" stroke-width="1.5" opacity=".7"/>'+
       '<circle cx="60" cy="60" r="6" fill="#B7FF3E"/>'+
       '<path d="M32,82 L60,44 L88,82" fill="none" stroke="#EDEEF0" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>'+
       '<path d="M32,82 L60,44 L88,82" fill="none" stroke="#B7FF3E" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" opacity=".9"/>'+

@@ -16,11 +16,16 @@
   --text-soft:#93989F;      /* muted cool grey */
   --text-mute:#6B6F75;      /* deepest muted for meta */
 
-  /* accent — one color, used sparingly */
+  /* accent 1 — lime — action / CTA / "do this" */
   --accent:#B7FF3E;         /* electric lime */
   --accent-deep:#7BC71C;    /* pressed / hover */
   --accent-ink:#0A0B0D;     /* text sitting on the accent */
   --accent-glow:rgba(183,255,62,.28);
+
+  /* accent 2 — cyan-blue — data / credential / "know this" */
+  --accent-2:#3AE0FF;       /* electric cyan-blue */
+  --accent-2-deep:#12A2BF;
+  --accent-2-glow:rgba(58,224,255,.24);
 
   /* utility */
   --line:rgba(255,255,255,.08);
@@ -232,8 +237,9 @@ header.scrolled{border-color:var(--line);box-shadow:0 6px 20px -14px rgba(0,0,0,
 .hero-stats .stat .n{
   font-family:var(--font-display);font-weight:400;
   font-size:clamp(2rem,3.4vw,2.9rem);
-  color:var(--accent);line-height:1;letter-spacing:.005em;
+  color:var(--accent-2);line-height:1;letter-spacing:.005em;
   font-variant-numeric:tabular-nums;
+  text-shadow:0 0 22px var(--accent-2-glow);
 }
 .hero-stats .stat .l{
   font-family:var(--font-sans);
@@ -370,14 +376,14 @@ section{padding:96px 0;position:relative}
 }
 .focus-card:hover{background:var(--surface-2)}
 .focus-card .n{
-  font-family:var(--font-display);font-size:1.3rem;color:var(--accent);
+  font-family:var(--font-display);font-size:1.3rem;color:var(--accent-2);
   font-weight:400;letter-spacing:.005em;line-height:1;
   font-variant-numeric:tabular-nums;
   margin-bottom:14px;
   display:inline-flex;align-items:center;gap:10px;
 }
 .focus-card .n::after{
-  content:"";display:inline-block;width:24px;height:1px;background:var(--accent);
+  content:"";display:inline-block;width:24px;height:1px;background:var(--accent-2);
 }
 .focus-card h3{
   font-family:var(--font-display);
@@ -419,7 +425,7 @@ section{padding:96px 0;position:relative}
 .member .cred{
   font-family:var(--font-sans);font-weight:700;font-size:.68rem;
   letter-spacing:.18em;text-transform:uppercase;
-  color:var(--accent);margin:8px 0 14px;
+  color:var(--accent-2);margin:8px 0 14px;
 }
 .member p{font-size:.94rem;color:var(--text-soft);margin-bottom:18px;line-height:1.55}
 .member .btn{font-size:.75rem;padding:11px 18px;letter-spacing:.14em;align-self:flex-start;margin-top:auto}
@@ -465,7 +471,7 @@ section{padding:96px 0;position:relative}
 }
 .bio-card .meta{padding:24px 26px}
 .bio-card .meta h2{font-family:var(--font-display);font-size:1.55rem;line-height:1;text-transform:uppercase;letter-spacing:-.005em}
-.bio-card .meta .cred{font-family:var(--font-sans);font-weight:700;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:8px 0 18px}
+.bio-card .meta .cred{font-family:var(--font-sans);font-weight:700;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-2);margin:8px 0 18px}
 .bio-card .rates{font-size:.9rem;color:var(--text-soft);border-top:1px solid var(--line);padding-top:16px;margin-bottom:20px}
 .bio-card .rates .row{display:flex;justify-content:space-between;gap:10px;padding:7px 0;font-variant-numeric:tabular-nums}
 .bio-card .rates .row b{color:var(--text);font-weight:600}
@@ -509,7 +515,7 @@ section{padding:96px 0;position:relative}
 .info-list li{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:flex-start}
 .info-list .k{
   font-family:var(--font-sans);font-weight:800;
-  min-width:100px;color:var(--accent);
+  min-width:100px;color:var(--accent-2);
   font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
 }
 .info-list .v{color:var(--text-soft);font-size:1rem}
@@ -578,7 +584,7 @@ section{padding:96px 0;position:relative}
 footer{background:var(--surface);color:var(--text-soft);padding:60px 0 30px;border-top:1px solid var(--line)}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1.1fr 1fr;gap:36px;padding-bottom:32px;border-bottom:1px solid var(--line)}
 .foot-col h4{
-  color:var(--accent);font-family:var(--font-sans);
+  color:var(--accent-2);font-family:var(--font-sans);
   font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;
   margin-bottom:18px;font-weight:800;
 }
