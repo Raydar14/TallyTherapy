@@ -63,14 +63,14 @@
     else if(href.indexOf("tel:") === 0){ track("call_click"); }
   });
 
-  /* Brand mark — chevron rising over a target ring, in navy + gold */
+  /* Brand mark — chevron rising through a target ring, blackout + lime */
   var MARK =
     '<svg viewBox="0 0 120 120" aria-hidden="true">'+
-      '<circle cx="60" cy="60" r="52" fill="none" stroke="#F5B72C" stroke-width="4"/>'+
-      '<circle cx="60" cy="60" r="34" fill="none" stroke="#F5B72C" stroke-width="2.5" opacity=".55"/>'+
-      '<circle cx="60" cy="60" r="8" fill="#F5B72C"/>'+
-      '<path d="M32,80 L60,44 L88,80" fill="none" stroke="#8C1D2F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>'+
-      '<path d="M32,80 L60,44 L88,80" fill="none" stroke="#F5B72C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>'+
+      '<circle cx="60" cy="60" r="52" fill="none" stroke="#B7FF3E" stroke-width="3"/>'+
+      '<circle cx="60" cy="60" r="34" fill="none" stroke="#B7FF3E" stroke-width="1.5" opacity=".45"/>'+
+      '<circle cx="60" cy="60" r="6" fill="#B7FF3E"/>'+
+      '<path d="M32,82 L60,44 L88,82" fill="none" stroke="#EDEEF0" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>'+
+      '<path d="M32,82 L60,44 L88,82" fill="none" stroke="#B7FF3E" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" opacity=".9"/>'+
     '</svg>';
 
   var pages = [
