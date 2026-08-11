@@ -1,9 +1,9 @@
 /* ============================================================
-   POWERS OF SPORT PSYCHOLOGY — shared header + footer + behaviour
+   POWERS OF SPORT PSYCHOLOGY, shared header + footer + behaviour
    Edit the menu / footer / contact info ONCE here and every page updates.
    ============================================================ */
 (function(){
-  /* Google Analytics 4 — matches Powers of Mind so bookings roll up in one account */
+  /* Google Analytics 4, matches Powers of Mind so bookings roll up in one account */
   (function(){
     var g=document.createElement("script"); g.async=1;
     g.src="https://www.googletagmanager.com/gtag/js?id=G-MYSWPPB8FZ";
@@ -14,14 +14,14 @@
   gtag("js", new Date());
   gtag("config", "G-MYSWPPB8FZ");
 
-  /* Microsoft Clarity — heatmaps & session analytics */
+  /* Microsoft Clarity, heatmaps & session analytics */
   (function(c,l,a,r,i,t,y){
     c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
     t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
   })(window, document, "clarity", "script", "xhh3akq8gm");
 
-  /* Region soft-block — US & Costa Rica only; fails open on lookup error */
+  /* Region soft-block, US & Costa Rica only; fails open on lookup error */
   (function(){
     var ALLOWED = { US:1, CR:1 };
     function block(){
@@ -29,7 +29,7 @@
       o.id = "geo-block";
       o.innerHTML = '<div class="gb-card">'+
         '<h1>Not available in your region</h1>'+
-        '<p>We are sorry, but Powers of Sport Psychology is only available in the United States and Costa Rica.</p>'+
+        '<p>We are sorry, but Powers of Mind: Sport Psych Edition is only available in the United States and Costa Rica.</p>'+
         '</div>';
       (document.body || document.documentElement).appendChild(o);
       if(document.body){ document.body.style.overflow = "hidden"; }
@@ -63,7 +63,7 @@
     else if(href.indexOf("tel:") === 0){ track("call_click"); }
   });
 
-  /* Brand mark — chevron rising through a target ring, blackout + lime */
+  /* Brand mark, chevron rising through a target ring, blackout + lime */
   var MARK =
     '<svg viewBox="0 0 120 120" aria-hidden="true">'+
       '<circle cx="60" cy="60" r="52" fill="none" stroke="#B7FF3E" stroke-width="3"/>'+
@@ -97,7 +97,7 @@
 
   var header =
   '<header id="top"><div class="container nav">'+
-    '<a href="index.html" class="brand"><span class="mark">'+MARK+'</span><span>Powers of Sport Psychology<small>Mental Performance &middot; Tallahassee</small></span></a>'+
+    '<a href="index.html" class="brand"><span class="mark">'+MARK+'</span><span>Powers of Mind<small>Sport Psych Edition &middot; <mark>Online or In Tallahassee</mark></small></span></a>'+
     '<nav class="nav-links" id="navLinks">'+
       '<a href="index.html"'+ac("index.html")+'>Home</a>'+
       '<a href="what-is-mental-performance.html"'+ac("what-is-mental-performance.html")+'>What Is Mental Performance</a>'+
@@ -121,7 +121,7 @@
   '<footer><div class="container">'+
     '<div class="foot-grid">'+
       '<div class="foot-col foot-brand">'+
-        '<a href="index.html" class="brand"><span class="mark">'+MARK+'</span><span>Powers of Sport Psychology<small>Mental Performance &middot; Tallahassee</small></span></a>'+
+        '<a href="index.html" class="brand"><span class="mark">'+MARK+'</span><span>Powers of Mind<small>Sport Psych Edition &middot; <mark>Online or In Tallahassee</mark></small></span></a>'+
         '<p>Evidence-based mental performance training for athletes, performers, and high-pressure professionals.</p>'+
       '</div>'+
       '<div class="foot-col"><h4>Visit</h4>'+
@@ -143,7 +143,7 @@
     '</div>'+
     '<p class="foot-crisis">In crisis? Call or text <strong>988</strong> (Suicide &amp; Crisis Lifeline), or call 911.</p>'+
     '<div class="foot-bottom">'+
-      '<span>&copy; <span id="year"></span> Powers of Sport Psychology &middot; Tallahassee, FL</span>'+
+      '<span>&copy; <span id="year"></span> Powers of Mind: Sport Psych Edition &middot; Tallahassee, FL</span>'+
       '<span>A sister practice of <a href="https://therapytallahassee.com/" target="_blank" rel="noopener">Powers of Mind</a></span>'+
     '</div>'+
   '</div></footer>';
