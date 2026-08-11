@@ -39,8 +39,8 @@
   --r-lg:12px;
   --maxw:1200px;
 
-  --font-display:"Anton","Impact","Oswald",sans-serif;
-  --font-sans:"Manrope","Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-display:"Big Shoulders Display","Impact","Arial Narrow",sans-serif;
+  --font-sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
 
   /* legacy token aliases so pre-redesign class references keep working */
   --ink:var(--text);
@@ -78,12 +78,13 @@ body::before{
 
 h1,h2,h3,h4{
   font-family:var(--font-display);
-  font-weight:400;
-  line-height:.92;letter-spacing:-.005em;
+  font-weight:800;
+  line-height:.94;letter-spacing:-.01em;
   color:var(--text);
   text-transform:uppercase;
   text-wrap:balance;
 }
+h1{font-weight:900}
 /* Manrope subheads used for smaller inline titles */
 h3.sub,h4.sub{font-family:var(--font-sans);font-weight:800;text-transform:none;letter-spacing:-.01em;line-height:1.15}
 
@@ -169,9 +170,9 @@ header.scrolled{border-color:var(--line);box-shadow:0 6px 20px -14px rgba(0,0,0,
 .nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px}
 .brand{
   display:flex;align-items:center;gap:12px;
-  font-family:var(--font-display);font-weight:400;font-size:1.4rem;
+  font-family:var(--font-display);font-weight:900;font-size:1.35rem;
   color:var(--text);line-height:.9;
-  text-transform:uppercase;letter-spacing:.005em;
+  text-transform:uppercase;letter-spacing:-.005em;
 }
 .brand .mark{width:42px;height:42px;flex:none;display:grid;place-items:center}
 .brand .mark svg{width:100%;height:100%;display:block}
@@ -236,7 +237,7 @@ header.scrolled{border-color:var(--line);box-shadow:0 6px 20px -14px rgba(0,0,0,
   color:var(--text);margin:22px 0 10px;
   letter-spacing:-.01em;line-height:.88;
 }
-.hero h1 em{font-style:normal;color:var(--accent);font-weight:400}
+.hero h1 em{font-style:normal;color:var(--accent);font-weight:700}
 .hero h1 .under{position:relative;display:inline-block}
 .hero h1 .under::after{
   content:"";position:absolute;left:0;right:0;bottom:6%;height:12%;
@@ -266,9 +267,9 @@ header.scrolled{border-color:var(--line);box-shadow:0 6px 20px -14px rgba(0,0,0,
 }
 .hero-stats .stat:hover{border-color:var(--accent-2);transform:translateY(-2px);box-shadow:0 8px 30px -12px var(--accent-2-glow)}
 .hero-stats .stat .n{
-  font-family:var(--font-display);font-weight:400;
-  font-size:clamp(2rem,3.2vw,2.7rem);
-  color:var(--accent-2);line-height:1;letter-spacing:.005em;
+  font-family:var(--font-display);font-weight:800;
+  font-size:clamp(1.9rem,3vw,2.5rem);
+  color:var(--accent-2);line-height:1;letter-spacing:-.01em;
   font-variant-numeric:tabular-nums;
   text-shadow:0 0 22px var(--accent-2-glow);
 }
@@ -407,8 +408,8 @@ section{padding:96px 0;position:relative}
 }
 .focus-card:hover{background:var(--surface-2)}
 .focus-card .n{
-  font-family:var(--font-display);font-size:1.05rem;color:var(--accent-2);
-  font-weight:400;letter-spacing:.02em;line-height:1;
+  font-family:var(--font-display);font-size:1rem;color:var(--accent-2);
+  font-weight:700;letter-spacing:.02em;line-height:1;
   font-variant-numeric:tabular-nums;
   margin-bottom:16px;
   display:inline-block;
