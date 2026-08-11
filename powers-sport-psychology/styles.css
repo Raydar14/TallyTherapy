@@ -96,6 +96,14 @@ h3.sub,h4.sub{font-family:var(--font-sans);font-weight:800;text-transform:none;l
 /* highlighted mark inside the brand tagline + location chip */
 .brand mark{background:transparent;color:var(--accent);font-weight:800;padding:0}
 
+/* "Online" gets a cyan-blue glow wherever it appears in copy */
+.on{
+  color:var(--accent-2);font-weight:700;
+  text-shadow:0 0 10px var(--accent-2-glow), 0 0 22px rgba(58,224,255,.22);
+}
+.btn .on{font-weight:800}
+.brand .on{font-weight:800;text-shadow:0 0 8px var(--accent-2-glow)}
+
 /* hero location chip — the "Online or In Tallahassee" callout */
 .location-chip{
   display:inline-flex;align-items:center;gap:10px;
