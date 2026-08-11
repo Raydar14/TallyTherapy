@@ -63,13 +63,14 @@
     else if(href.indexOf("tel:") === 0){ track("call_click"); }
   });
 
-  /* Brand mark, chevron rising through a single ring (not concentric — avoids Olympic-ring likeness) */
+  /* Brand mark, chevron rising through a single ring (not concentric — avoids IOC ring likeness).
+     Uses four of the five ring colors functionally: blue outer, yellow center, black chevron, green highlight. */
   var MARK =
     '<svg viewBox="0 0 120 120" aria-hidden="true">'+
-      '<circle cx="60" cy="60" r="52" fill="none" stroke="#0033A0" stroke-width="3"/>'+
-      '<circle cx="60" cy="60" r="6" fill="#B58411"/>'+
-      '<path d="M32,82 L60,44 L88,82" fill="none" stroke="#0033A0" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>'+
-      '<path d="M32,82 L60,44 L88,82" fill="none" stroke="#B58411" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" opacity=".95"/>'+
+      '<circle cx="60" cy="60" r="52" fill="none" stroke="#0081C8" stroke-width="3"/>'+
+      '<circle cx="60" cy="60" r="6" fill="#FCB131"/>'+
+      '<path d="M32,82 L60,44 L88,82" fill="none" stroke="#0B0B0B" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>'+
+      '<path d="M32,82 L60,44 L88,82" fill="none" stroke="#00A651" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" opacity=".95"/>'+
     '</svg>';
 
   var pages = [
