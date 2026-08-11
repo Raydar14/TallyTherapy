@@ -97,7 +97,7 @@
 
   var header =
   '<header id="top"><div class="container nav">'+
-    '<a href="index.html" class="brand"><span class="mark">'+MARK+'</span><span>Powers of Mind<small>Sport Psych Edition &middot; <mark>Online or In Tallahassee</mark></small></span></a>'+
+    '<a href="index.html" class="brand"><span class="mark">'+MARK+'</span><span>Powers of Mind<small>Sport&nbsp;Psych&nbsp;Edition &middot; <mark>Online or Tallahassee</mark></small></span></a>'+
     '<nav class="nav-links" id="navLinks">'+
       '<a href="index.html"'+ac("index.html")+'>Home</a>'+
       '<a href="what-is-mental-performance.html"'+ac("what-is-mental-performance.html")+'>What Is Mental Performance</a>'+
@@ -121,7 +121,7 @@
   '<footer><div class="container">'+
     '<div class="foot-grid">'+
       '<div class="foot-col foot-brand">'+
-        '<a href="index.html" class="brand"><span class="mark">'+MARK+'</span><span>Powers of Mind<small>Sport Psych Edition &middot; <mark>Online or In Tallahassee</mark></small></span></a>'+
+        '<a href="index.html" class="brand"><span class="mark">'+MARK+'</span><span>Powers of Mind<small>Sport&nbsp;Psych&nbsp;Edition &middot; <mark>Online or Tallahassee</mark></small></span></a>'+
         '<p>Evidence-based mental performance training for athletes, performers, and high-pressure professionals.</p>'+
       '</div>'+
       '<div class="foot-col"><h4>Visit</h4>'+
