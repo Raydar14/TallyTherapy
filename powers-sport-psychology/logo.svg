@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" aria-label="Powers of Mind: Sport Psych Edition">
+  <circle cx="60" cy="60" r="52" fill="none" stroke="#0081C8" stroke-width="3"/>
+  <circle cx="60" cy="60" r="6" fill="#FCB131"/>
+  <path d="M32,82 L60,44 L88,82" fill="none" stroke="#0B0B0B" stroke-width="7" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M32,82 L60,44 L88,82" fill="none" stroke="#00A651" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" opacity=".95"/>
+</svg>
