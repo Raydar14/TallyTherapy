@@ -1,0 +1,3 @@
+# Keep archives and deploy notes out of the public repo
+*.zip
+DEPLOY*.md
